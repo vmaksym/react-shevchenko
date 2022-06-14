@@ -1,5 +1,5 @@
 import { Props } from '../types/props';
-import { Anthroponym } from 'shevchenko/dist/types/core';
+import { Anthroponym, Gender } from 'shevchenko/dist/types/core';
 
 const inflect = (
   fn: (anthroponym: Anthroponym) => Anthroponym,
@@ -8,7 +8,7 @@ const inflect = (
   const [lastName, firstName, middleName] = children.split(' ');
 
   const anthroponym = fn({
-    gender,
+    gender: gender as Gender,
     firstName,
     middleName,
     lastName

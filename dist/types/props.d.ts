@@ -1,5 +1,4 @@
-import { Gender } from 'shevchenko/dist/types/core';
 export declare type Props = {
-    gender: Gender;
+    gender: 'male' | 'female';
     children: string;
 };
