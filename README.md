@@ -38,8 +38,12 @@ import { Ablative, Genitive } from 'react-shevchenko';
 
 const App = () => {
   return (<main>
-    <Genitive gender='male'>Шевченко Тарас</Genitive> {/* Шевченка Тараса */}
-    <Ablative gender='male'>Шевченко Тарас Григорович</Ablative>{/* Шевченком Тарасом Григоровичем */}
+    <p>
+      <Genitive gender='male'>Шевченко Тарас</Genitive> {/* Шевченка Тараса */}
+    </p>
+    <p>
+      <Ablative gender='male'>Шевченко Тарас Григорович</Ablative>{/* Шевченком Тарасом Григоровичем */}
+    </p>
   </main>)
 }
 ```
